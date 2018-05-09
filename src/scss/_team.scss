@@ -1,0 +1,79 @@
+// Team
+
+.section-team{
+
+  .section__text{
+    @include text($text-color,14px);
+  }
+
+  .team__image{
+    position: relative;
+    max-width: 235px;
+    max-height: 285px;
+
+    .team__image-pointer{
+      position: absolute;
+      top: 70%;
+      right: 20%;
+      color: #ddd;
+      font-size: 25px;
+    }
+
+    .team__image-active{
+      opacity: 0.8; 
+    }
+
+    .team__active{
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 7px;
+      margin: -5px 0 0 0;
+      background-color: $primary;
+    }
+
+    .team__hover{
+      position: absolute;
+      left: 50%;
+      width: 0%;
+      height: 7px;
+      background-color: $primary;
+      margin: -5px 0 0 0;
+      transform: translateX(-50%);
+      transition: all 0.5s ease;
+    }
+
+    .img-fluid{
+      cursor: pointer;
+  
+  
+      &:hover{
+        opacity: 0.8;
+       }
+      &:hover ~ .team__hover {
+        width: 99%;
+      }
+    }
+  }
+
+  
+
+  .team__title{
+    @include title(20px);
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  .team__text {
+    @include text($text-color,13px);
+  }
+
+  .team__icon{
+    cursor: pointer;
+    &:hover{
+      transform: scale(1.1);
+      transition: 0.6s ease-in-out;
+    }
+  }
+}

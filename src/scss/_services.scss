@@ -1,0 +1,24 @@
+// Services
+
+
+
+.card {
+  border:none;
+
+  .card__title{
+    @include title(14px);
+  }
+
+  .card__text {
+    @include text($text-color,13px);
+  }
+  
+  .card__image{
+    height: 60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+}

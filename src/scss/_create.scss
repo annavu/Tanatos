@@ -1,0 +1,23 @@
+//Create
+
+
+.section-create{
+
+  .section__text{
+    @include text($text-color,14px);
+  }
+
+  .img-fluid{
+    cursor: pointer;
+    border: #ddd 2px solid;
+    border-radius: 13px;
+    box-shadow: 3px 5px 5px rgba(104,104,104,0.8);
+
+    &:hover{
+      transition: box-shadow 0.5s ease-in-out;
+      box-shadow: none;
+    }
+  }
+
+
+}

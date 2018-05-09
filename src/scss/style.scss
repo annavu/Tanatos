@@ -1,0 +1,29 @@
+// Variable Overrides 
+$theme-colors: (
+  "primary": #f7600e
+);
+
+$primary: #f7600e;
+
+$input-btn-focus-box-shadow:  none;
+
+
+// Bootstrap Sass Imports
+@import "node_modules/bootstrap/scss/bootstrap";
+
+//partials import
+@import 'variables';
+@import 'mixins';
+@import 'general';
+@import 'header';
+@import 'services';
+@import 'newsletter';
+@import 'create';
+@import 'slider';
+@import 'team';
+@import 'contact';
+@import 'footer';
+
+////////////////////////////////
+
+

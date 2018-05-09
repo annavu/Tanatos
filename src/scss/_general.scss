@@ -1,0 +1,13 @@
+body {
+  font-family: $font-family;
+  box-sizing: border-box;
+}
+
+.section__header{
+  @include section-header($text-color);
+  padding: 10px 0;
+
+  .section__header-orange{
+    @include section-header($primary);
+  }
+}

@@ -1,0 +1,29 @@
+@mixin button($width, $height, $color, $border-radius) {
+  width: $width;
+  height: $height;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $color;
+  border-radius: $border-radius;
+}
+
+@mixin section-header($color) {
+  color:$color;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@mixin text($color,$size){
+  color: $color;
+  font-size: $size;
+  line-height: 24px;
+}
+
+@mixin title($size) {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $text-color;
+  font-size: $size;
+  cursor: pointer;
+}

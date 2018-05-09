@@ -1,0 +1,53 @@
+// Clients, Slider
+
+
+.section-carousel{
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+  url('../img/clients2-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 450px;
+
+  .carousel-indicators__item{
+    background-color: rgba(247, 96, 14, 0.4);
+  }
+
+  .carousel-indicators .active{
+    background-color: $primary;
+  }
+  
+  .carousel-item {
+    height: 450px;
+  }
+
+  .carousel-caption{
+    bottom:40px;
+  
+    .carousel-caption__img{
+      width: 100px;
+      height: 116px;
+
+      @media(max-width: 380px){
+        display: none;
+      }
+    }
+  
+    .carousel-caption__text {
+      @include title(13px);
+      color: #ccc;
+    }
+
+    .carousel-caption__quote{
+      @media (max-width:576px) {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .carousel-control-prev, .carousel-control-next{
+    cursor: pointer;
+  }
+
+}
