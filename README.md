@@ -7,3 +7,5 @@ Responsive website based on free PSD file
 - Bootstrap
 - Gulp
 - LightBox plugin
+
+ [DEMO](https://annavu.github.io/Tanatos/dist/)
